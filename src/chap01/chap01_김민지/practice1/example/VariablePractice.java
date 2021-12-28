@@ -1,4 +1,4 @@
-package chap01.chap01_김민지.kh.practice1.example;
+package chap01.chap01_김민지.practice1.example;
 
 import java.util.Scanner;
 

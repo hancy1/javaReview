@@ -1,6 +1,6 @@
-package chap01.chap01_김민지.kh.practice2.run;
+package chap01.chap01_김민지.practice2.run;
 
-import chap01.chap01_김민지.kh.practice2.example.CastingPractice;
+import chap01.chap01_김민지.practice2.example.CastingPractice;
 
 public class Run {
 

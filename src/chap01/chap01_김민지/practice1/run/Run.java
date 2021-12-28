@@ -1,6 +1,6 @@
-package chap01.chap01_김민지.kh.practice1.run;
+package chap01.chap01_김민지.practice1.run;
 
-import chap01.chap01_김민지.kh.practice1.example.VariablePractice;
+import chap01.chap01_김민지.practice1.example.VariablePractice;
 
 public class Run {
 
