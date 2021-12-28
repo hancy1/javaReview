@@ -1,6 +1,6 @@
-package chap01.chap01_±è¹ÎÁö.practice1.run;
+package chap01.chap01_ê¹€ë¯¼ì§€.kh.practice1.run;
 
-import chap01.chap01_±è¹ÎÁö.practice1.example.VariablePractice;
+import chap01.chap01_ê¹€ë¯¼ì§€.kh.practice1.example.VariablePractice;
 
 public class Run {
 
