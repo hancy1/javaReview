@@ -52,6 +52,7 @@ public class LoopPractice {
 		}
 	}
 	
+	
 	public void practice3(){
 		//입력받은 한개의 숫자를 1까지 거꾸로 출력하기
 		
@@ -70,6 +71,7 @@ public class LoopPractice {
 			System.out.println("잘못 입력하셨습니다.");
 		}	
 	}
+	
 	
 	public void practice4(){
 		// 위의 문제랑 같은데 잘못 입력했을 때 처음으로 돌아가기
@@ -96,27 +98,28 @@ public class LoopPractice {
 		
 	}
 
-	public void practice5(){
+	public void practice5(){		
 		
+		//1부터 사용자에게 입력 받은 수까지의 정수들의 합을 출력하세요
 		
 		System.out.println("정수를 하나 입력하세요 : ");
 		
 		int num = sc.nextInt();		
 		int sum = 0;
 		
-		for(int i = 1; i<num; i++) { 
+		for(int i = 1; i<=num; i++) { 
 			sum += i;
-			System.out.print(i + " + " );  
-		}	
-		
-		System.out.println(num + " = " + sum);
-		//마지막 num뒤에 +붙는거 안하려고 i가 num보다 작을때까지만 for문으로 출력하고 입력받은 숫자랑 같을때는 그대로 출력~!
-		
-	}
+			 
+			if(i < num) { 
+				System.out.print(i + " + ");
+			}else { 
+				System.out.print(i + " = " + sum);
+			}
+		}		
+	} 
 	
 	public void practice6(){		
-		//입력받은 두 수를 포함한 두수의 사이값 출력
-		
+		//입력받은 두 수를 포함한 두수의 사이값 출력		
 		
 		
 		System.out.println("첫번 째 1이상의 정수 : ");
@@ -358,9 +361,9 @@ public class LoopPractice {
 			System.out.println("소수입니다.");
 			}	
 		
-		else {
+		else { //나랑 같은 수로 나눠지는 건 어차피 소수도 마찬가지라 뺀거임../
 			for(i=2; i<num; i++) {
-				if(num%i==0)
+				if(num%i==0)					
 					break;
 			}
 			if(i==num){
@@ -428,7 +431,7 @@ public class LoopPractice {
 					}
 				}
 				
-				if(flag) { // 소수일 경우 
+				if(flag) { 
 					System.out.print(i + " ");
 					count++;
 				}
@@ -467,6 +470,7 @@ public class LoopPractice {
 				count++;
 			}
 		}		
+		System.out.println();
 		System.out.println("count : " + count);
 	}
 	
@@ -572,6 +576,89 @@ public class LoopPractice {
 	}
 	
 	
+	public void practice23a() {
+	
+		//하드코딩	
+		System.out.println("  *");
+		System.out.println(" * *");
+		System.out.println("*   *");
+		System.out.println(" * *");
+		System.out.println("  *");
+		
+	}
+	
+	public void practice23b() {
+		
+		for(int i=-2; i<=2; i++) {		// -2 ~ 2 까지 반복 (5번 반복)
+			
+			int k = i < 0 ? -i : i;		// k 변수에 i 절대값 대입
+			
+			for(int j=k; j>0; j--) {	// 공백을 출력하는 반복문
+				System.out.print(" ");
+			}
+			
+			for(int j=1; j<=5-2*k; j++) { // 별을 출력하는 반복문
+				
+				if(j==1 || j==5-2*k) {		// 첫번째 열과 마지막 열에만 별 찍히고
+					System.out.print("*");
+				}else {						// 나머지는 별 찍히게
+					System.out.print(" ");
+				}
+			}
+			System.out.println();
+		}
+		
+	}
 	
 	
+	public void practice24() {
+		
+		for(int i=-2; i<=2; i++) {		// -2 ~ 2 까지 반복 (5번 반복)
+			
+			int k = i < 0 ? -i : i;		// k 변수에 i 절대값 대입
+			
+			for(int j=k; j>0; j--) {	// 공백을 출력하는 반복문
+				System.out.print(" ");
+			}
+			
+			for(int j=1; j<=5-2*k; j++) { // 별을 출력하는 반복문
+				
+				if(j==1 || j==5-2*k) {		// 첫번째 열과 마지막 열에만 별 찍히고
+					System.out.print("*");
+				}else {						// 나머지는 별 찍히게
+					System.out.print(" ");
+				}
+			}
+			System.out.println();
+		}
+		
+	}
+	
+	
+	//25
+	
+	public void practice25() {
+		
+		for(int i=1; i<=5; i++) {		// 5행 반복 (5번 반복)
+			
+			for(int j=1; j<=10; j++) {	// 10열 반복 (10번 반복)
+				
+				if(i==1 || i==5) {			// 첫번째 행과 마지막 행에는
+					System.out.print("*");	// 모든 열에 다 별 찍히도록
+					
+				}else {						// 그외의 행에는
+					if(j==1 || j==10) {		// 첫번째 열과 마지막 열에만 별찍고
+						System.out.print("*");
+					}else {					// 그 외의 열에는 공백이 찍히도록
+						System.out.print(" ");
+					}
+				}
+			}
+			System.out.println();
+		}
+	}
+	
+	
+
+
 }
