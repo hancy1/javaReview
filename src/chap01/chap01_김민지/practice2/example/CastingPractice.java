@@ -1,4 +1,4 @@
-package chap01.chap01_±è¹ÎÁö.practice2.example;
+package chap01.chap01_ê¹€ë¯¼ì§€.practice2.example;
 
 import java.util.Scanner;
 
@@ -6,24 +6,24 @@ public class CastingPractice {
 	Scanner sc = new Scanner (System.in);
 	
 	public void method1() {
-		System.out.println("¹®ÀÚ : ");
+		System.out.println("ë¬¸ì : ");
 		char ch = sc.nextLine().charAt(0);
 		
 		System.out.println(ch + " Unicode : " + (int)ch);
 	}
 	
 	public void method2() {
-		System.out.println("±¹¾î : ");
+		System.out.println("êµ­ì–´ : ");
 		double kor = sc.nextDouble();
 		
-		System.out.println("¿µ¾î : ");
+		System.out.println("ì˜ì–´ : ");
 		double eng = sc.nextDouble();
 		
-		System.out.println("¼öÇĞ : ");
+		System.out.println("ìˆ˜í•™ : ");
 		double math = sc.nextDouble();
 		
-		System.out.println("ÃÑÁ¡ : " + (int)(kor+eng+math));
-		System.out.println("Æò±Õ : " + (int)(kor+eng+math)/3);
+		System.out.println("ì´ì  : " + (int)(kor+eng+math));
+		System.out.println("í‰ê·  : " + (int)(kor+eng+math)/3);
 	}
 	
 	public void method3() {

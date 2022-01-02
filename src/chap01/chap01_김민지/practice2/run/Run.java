@@ -1,6 +1,6 @@
-package chap01.chap01_±è¹ÎÁö.practice2.run;
+package chap01.chap01_ê¹€ë¯¼ì§€.practice2.run;
 
-import chap01.chap01_±è¹ÎÁö.practice2.example.CastingPractice;
+import chap01.chap01_ê¹€ë¯¼ì§€.practice2.example.CastingPractice;
 
 public class Run {
 

@@ -1,58 +1,58 @@
-package chap01.chap01_±è¹ÎÁö.practice1.example;
+package chap01.chap01_ê¹€ë¯¼ì§€.practice1.example;
 
 import java.util.Scanner;
 
 public class VariablePractice {
 	Scanner sc = new Scanner (System.in);
 	public void method1() {
-		System.out.println("ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.println("ì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 		String name = sc.nextLine();
 		
-		System.out.println("³ªÀÌ¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.println("ë‚˜ì´ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		int age = sc.nextInt();
 		sc.nextLine();
 		
-		System.out.println("¼ºº°À» ÀÔ·ÂÇÏ¼¼¿ä(³²/¿©) : ");
+		System.out.println("ì„±ë³„ì„ ì…ë ¥í•˜ì„¸ìš”(ë‚¨/ì—¬) : ");
 		char gender = sc.nextLine().charAt(0);
 		
-		System.out.println("Å°¸¦ ÀÔ·ÂÇÏ¼¼¿ä(cm) : ");
+		System.out.println("í‚¤ë¥¼ ì…ë ¥í•˜ì„¸ìš”(cm) : ");
 		double height = sc.nextDouble();
 		
-		System.out.println("Å° " + height + "ÀÎ " + age + "»ì " + gender + "ÀÚ " + name +"´Ô ¹İ°©½À´Ï´Ù^^");
+		System.out.println("í‚¤ " + height + "ì¸ " + age + "ì‚´ " + gender + "ì " + name +"ë‹˜ ë°˜ê°‘ìŠµë‹ˆë‹¤^^");
 	}
 	
 	public void method2() {
-		System.out.println("Ã¹ ¹øÂ° Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.println("ì²« ë²ˆì§¸ ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		int num1 = sc.nextInt();
 		sc.nextLine();
 		
-		System.out.println("µÎ ¹øÂ° Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.println("ë‘ ë²ˆì§¸ ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		int num2 = sc.nextInt();
 		sc.nextLine();
 		
-		System.out.println("´õÇÏ±â °á°ú : " + (num1 + num2));
-		System.out.println("»©±â °á°ú : " + (num1 - num2));
-		System.out.println("°öÇÏ±â °á°ú : " + (num1 * num2));
-		System.out.println("³ª´©±â ¸ò °á°ú : " + (num1 / num2));
+		System.out.println("ë”í•˜ê¸° ê²°ê³¼ : " + (num1 + num2));
+		System.out.println("ë¹¼ê¸° ê²°ê³¼ : " + (num1 - num2));
+		System.out.println("ê³±í•˜ê¸° ê²°ê³¼ : " + (num1 * num2));
+		System.out.println("ë‚˜ëˆ„ê¸° ëª« ê²°ê³¼ : " + (num1 / num2));
 	}
 
 	public void method3() {
-		System.out.println("°¡·Î : ");
+		System.out.println("ê°€ë¡œ : ");
 		double w = sc.nextDouble();
 		
-		System.out.println("¼¼·Î : ");
+		System.out.println("ì„¸ë¡œ : ");
 		double h = sc.nextDouble();
 		
-		System.out.println("¸éÀû : " + (w*h));
-		System.out.println("µÑ·¹ : " + ((w+h)*2));
+		System.out.println("ë©´ì  : " + (w*h));
+		System.out.println("ë‘˜ë ˆ : " + ((w+h)*2));
 	}
 	
 	public void method4() {
-		System.out.println("¹®ÀÚ¿­À» ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.println("ë¬¸ìì—´ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 		String str = sc.nextLine();
 		
-		System.out.println("Ã¹ ¹øÂ° ¹®ÀÚ : " + str.charAt(0));
-		System.out.println("µÎ ¹øÂ° ¹®ÀÚ : " + str.charAt(1));
-		System.out.println("¼¼ ¹øÂ° ¹®ÀÚ : " + str.charAt(2));
+		System.out.println("ì²« ë²ˆì§¸ ë¬¸ì : " + str.charAt(0));
+		System.out.println("ë‘ ë²ˆì§¸ ë¬¸ì : " + str.charAt(1));
+		System.out.println("ì„¸ ë²ˆì§¸ ë¬¸ì : " + str.charAt(2));
 	}
 }
