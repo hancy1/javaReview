@@ -53,7 +53,7 @@ public class CastingPractice {
 		System.out.println((int) fNum); // 3
 		System.out.println((int) (iNum1 / fNum)); // 3
 		System.out.println(iNum1 / fNum);// 3.3333333
-		System.out.println((double) iNum1 / fNum); // 3.333333333333335
+		System.out.println((double) iNum1 / fNum); // 3.333333333333335 double은 소수점 18번 자리에서 반올림하는 반면 float는 소수점 9번째에서 반올림한다.
 		System.out.println(ch); // 'A'
 		System.out.println((int) ch); // 65
 		System.out.println((int) ch + iNum1); // 75
