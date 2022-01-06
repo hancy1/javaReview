@@ -16,7 +16,7 @@ public class DimensionPractice {
 
 		for(int i = 0; i < arr.length; i++) {
 			for(int j = 0; j < arr[i].length; j++) {
-				System.out.printf( "%3d", arr[i][j]);
+				System.out.printf( "%3d", arr[i][j]); // %d가 정수형, 3은 세자리로 자리를 구성
 			}System.out.println();
 		}
 	}
@@ -68,8 +68,8 @@ public class DimensionPractice {
 
 				arr[i][j] = (int)(Math.random()*10+1);
 
-				arr[3][i] += arr[i][j]; // 행들의 값
-				arr[i][3] += arr[i][j]; // 열들의 갑
+				arr[3][i] += arr[i][j]; // 열들의 값
+				arr[i][3] += arr[i][j]; // 행들의 갑
 
 				arr[3][3] += arr[i][j]; // 총합
 
@@ -104,7 +104,8 @@ public class DimensionPractice {
 
 				for(int i = 0; i < arr.length; i++) {
 					for(int j = 0; j < arr[i].length; j++) {
-						arr[i][j] = (char)((int) (Math.random()*25+65)); // 왜 25 65 순서바꾸면 안나오는지..?
+						arr[i][j] = (char)((int) (Math.random()*26+65)); // 왜 25 65 순서바꾸면 안나오는지..? 0 <= X <65 이기 때문에! 발생시키는 수가 26개이므로 
+
 					}
 				}
 				for(int i = 0; i < arr.length; i++) {
@@ -265,9 +266,9 @@ public class DimensionPractice {
 		int row = 0; // 몇번째 줄 -> 행
 		String col = ""; // 왼쪽 오른쪽 -> 열
 		
-		for(int i = 0; i < stu1.length; i++) {
+		for(int i = 0; i < stu1.length; i++) { 
 			for(int j = 0; j < stu1[i].length; j++) {
-				if(stu1[i][j].equals(name)) {
+				if(stu1[i][j].equals(name)) { // 1분단에 학생이 있으면 part 를 1분단으로 설정, 행 row 은 0부터 시작 하므로 +1 해주기, 열 col 이 0이면 왼쪽 1이면 오른쪽
 					part = "1분단";
 					row = i+1; // 첫째줄부터니까 0+1
 					
@@ -280,7 +281,7 @@ public class DimensionPractice {
 			}
 		}
 		
-		for(int i = 0; i < stu2.length; i++) {
+		for(int i = 0; i < stu2.length; i++) { // 2분단에 학생이 있으면 part 를 2분단으로 설정, 행 row 은 0부터 시작 하므로 +1 해주기, 열 col 이 0이면 왼쪽 1이면 오른쪽
 			for(int j = 0; j < stu2[i].length; j++) {
 				if(stu2[i][j].equals(name)) {
 					part = "2분단";
@@ -295,7 +296,7 @@ public class DimensionPractice {
 			}
 		}
 		
-		if(part.equals("")) {
+		if(part.equals("")) { // part 가 비어있으면 !
 			System.out.println("검색하신 학생은 없습니다.");
 		}else {
 			System.out.println("검색하신 " + name + " 학생은 " + part + " " + row + "번째 줄 " + col +"에 있습니다." );
