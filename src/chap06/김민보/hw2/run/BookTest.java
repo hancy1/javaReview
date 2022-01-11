@@ -1,4 +1,4 @@
-package 김민보.hw2.run;
+package chap06.김민보.hw2.run;
 
 import 김민보.hw2.model.vo.Book;
 
