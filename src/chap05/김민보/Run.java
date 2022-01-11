@@ -8,7 +8,7 @@ public class Run {
 		
 		DimensionPractice a = new DimensionPractice();
 		
-		a.practice8();
+		a.practice5();
 	}
 
 }
