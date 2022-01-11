@@ -1,4 +1,4 @@
-package 김민보.hw1.model.vo;
+package chap06.김민보.hw1.model.vo;
 
 public class Product {
 	
