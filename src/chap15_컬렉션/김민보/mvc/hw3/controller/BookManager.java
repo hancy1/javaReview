@@ -59,11 +59,11 @@ public class BookManager {
 		return book;
 	}
 
-	public void printBookList(Book[] br) {
+	public void printBookList(Book[] book) {
 		
 		//향상된 for문
 		
-		for(Book b : br) {
+		for(Book b : book) {
 			System.out.println(b);
 		}
 	}
